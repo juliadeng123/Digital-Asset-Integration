@@ -1,24 +1,19 @@
 import { View } from "react-native";
-import InputForm from "@/components/molecules/InputForm";
-
+import Post from "@/components/molecules/Post";
 
 export default function Index() {
   return (
     <View
       style={{
         flex: 1,
-        justifyContent: "center",
         alignItems: "center",
       }}
     >
-      <InputForm 
-        labelText="Button Label"
-        buttonTitle="Button!"
-        placeholderText="I'm an input form!"
-        placeholderTextColor="pink"
+      <Post
+        nameText="Jane Doe"
+        imgSrc="https://upload.wikimedia.org/wikipedia/commons/0/03/Woman_redhead_natural_portrait_1.jpg"
+        messageText="Nice to meet you all! Welcome to my first post!"
       />
     </View>
   );
 }
-
-// export default function InputForm({ labelText, buttonTitle, placeholderText }) {
