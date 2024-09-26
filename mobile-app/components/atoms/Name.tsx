@@ -1,14 +1,16 @@
 import { Text, View } from "react-native";
 
-export default function Label({ labelText }) {
+export default function Label({ nameText }) {
     return (
         <View>
            <Text
                 style={{
-                    color:"purple"
+                    color:"black",
+                    fontSize: "20px",
+                    fontWeight: "bold"
                 }}
            >
-            {labelText}
+            {nameText}
            </Text>
         </View>
     )
